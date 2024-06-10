@@ -1,0 +1,34 @@
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  padding: 20px;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  position: static;
+  color: #333;
+}
+
+.carousel-caption h5 {
+  color: #4bc7cb;
+  font-size: 1.5rem;
+}
+
+.carousel-caption p {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-caption .btn {
+  background-color: #4bc7cb;
+  border: none;
+}

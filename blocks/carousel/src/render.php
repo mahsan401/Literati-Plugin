@@ -5,4 +5,5 @@
 ?>
 <p <?php echo get_block_wrapper_attributes(); ?>>
 	<?php esc_html_e( 'Literati Example Carousel – hello from a dynamic block!', 'literati-example-carousel' ); ?>
+	
 </p>

@@ -74,4 +74,22 @@ function literati_display_promotion_posts() {
     echo literati_fetch_promotion_posts();
 }
 add_action('wp_footer', 'literati_display_promotion_posts');
+
+function my_promotion_plugin_enqueue() {
+    // Enqueue Bootstrap CSS
+    wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+    // Enqueue custom CSS for the block
+    wp_enqueue_style('custom-carousel-css', 'blocks/carousel/build/carousel.css');
+
+    // Enqueue Bootstrap JS
+    wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js', array('jquery'), null, true);
+
+    // Enqueue custom JS for the block (if needed)
+    wp_enqueue_script('custom-carousel-js','blocks/carousel/build/car.js', array('jquery'), null, true);
+}
+add_action('enqueue_block_assets', 'my_promotion_plugin_enqueue');
+
+
+
 ?>
