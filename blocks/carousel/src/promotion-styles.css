@@ -1,0 +1,64 @@
+.promotion-carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-color: #f5f5fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .promotion-data {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 20px;
+    }
+
+    .promotion-item {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-width: 300px;
+        flex-shrink: 0;
+
+        .promotion-content {
+            margin-bottom: 10px;
+        }
+
+        .promotion-header {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .promotion-text {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .promotion-button {
+            margin-bottom: 20px;
+            .button {
+                background-color: #1e87f0;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 16px;
+            }
+        }
+
+        .promotion-image {
+            img {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+}
